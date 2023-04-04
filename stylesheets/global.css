@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+body {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+p, a, div, span, input {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+
+input[type="search"] {
+  height: 100%;
+}
+
+button {
+  border-radius: 5px;
+}
+
+.link-underline:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: rgba(45,46,47,1);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 36px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+
+}
+
+.section__container {
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.card {
+  grid-column: span 1;
+  border: 1px solid #ebebeb;
+}
+
+@media screen and (min-width: 1224px) {
+  .section__container {
+    max-width: 1224px;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+}

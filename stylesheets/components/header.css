@@ -1,0 +1,216 @@
+.hero {
+  background-image: url("../../images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg");
+  background-size: cover;
+  color: white;
+  overflow: hidden;
+  background-position: center;
+
+}
+
+.hero__upper {
+  height: 130px;
+}
+
+.hero__header {
+  padding: 24px 40px 0 40px;
+  min-width: 960px;
+}
+
+.hero__header__upper {
+  display: grid;
+  height: 48px;
+  grid-template-columns: 112px 1fr 1fr;
+}
+
+.header__logo {
+  grid-column: 1 / 2;
+  max-width: 80px;
+  flex: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 80px;
+  height: 30px;
+  margin-right: 32px;
+}
+
+.header__search {
+  grid-column: 2 / 3;
+}
+
+.header__search__form {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.input-wrapper {
+  flex: 1;
+  background-color: white;
+  padding: 13px 16px;
+  overflow: hidden;
+  color: initial;
+}
+
+
+.input-wrapper input {
+  width: 100%;
+}
+
+.search__location {
+  position: relative;
+}
+
+.search__location::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: #ebebeb;
+  top: 12px;
+  bottom: 12px;
+  left: 5px;
+}
+
+button.button__search {
+  flex: none;
+  width: 56px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+}
+
+button.button__search:hover {
+  background-color: ;
+}
+
+button.button__search svg {
+  fill: white;
+}
+
+.header__interact {
+  grid-column: 3 / 4;
+  flex: none;
+  margin-left: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+
+.header__interact p {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+.header__interact button:not(:last-child):hover {
+  background-color: #ffffff4d;
+}
+
+.button__prof, .button__review {
+  padding: 8px;
+  height: 36px;
+  margin-top: 3px;
+}
+
+.button__connect, .button__subscribe {
+  padding: 8px 16px;
+  height: 40px;
+  margin-top: 3px;
+}
+
+.button__connect p, .button__subscribe p {
+  font-size: 16px;
+  font-weight: 500;
+
+}
+
+.button__connect {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.button__connect, .button__subscribe, button.button__search {
+  transition: background-color 1s ease
+}
+
+.button__subscribe, button.button__search {
+  background-color: rgba(224,7,7,1);
+}
+
+.button__subscribe:hover, button.button__search:hover {
+  background-color: rgb(244,13,21);
+}
+
+.hero__header__lower {
+  display: grid;
+  grid-template-columns: 112px 1fr 1fr;
+}
+
+.hero__lower {
+  display: grid;
+  grid-template-columns: 112px 1fr 1fr;
+  padding: 64px 40px 32px;
+}
+
+.hero__lower__container {
+  grid-column: 1 / 4;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 56px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.hero__credits__link, .hero__credits__photo a {
+  font-weight: 700;
+}
+
+.placeholder {
+  height: 1000px;
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 1050px) {
+  .input-wrapper {
+    width: 102px
+  }
+
+  .hero__lower {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .hero__lower {
+    grid-template-columns: 10% 1fr 10%;
+  }
+
+  .hero__lower__container {
+    grid-column: 2 / 3;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .hero__header__upper, .hero__header__lower {
+    grid-template-columns: 3fr 13fr 12fr;
+  }
+
+}

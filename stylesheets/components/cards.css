@@ -1,0 +1,115 @@
+.activity__heading {
+  padding-top: 56px;
+  text-align: center;
+}
+
+.activity__heading__text {
+  margin-bottom: 48px;
+
+}
+
+.activity__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.activity__card {
+  padding-top: 16px;
+  padding-bottom: 7px;
+}
+
+.user, .restaurant-name {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.user {
+  display: flex;
+  gap: 6px;
+}
+
+.user__photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user__name__text a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+
+}
+
+.restaurant-name {
+  margin-top: 16px;
+}
+
+.restaurant-name__text a {
+  color: rgba(2,122,151,1);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.photo__container {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.card__button__container {
+  margin: 12px;
+}
+
+.button__like {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: background-color 0.7s ease;
+}
+
+.button__like:hover {
+  background-color: rgb(226, 226, 230);
+}
+
+.button__like svg {
+  fill: rgb(45, 46, 47);
+}
+
+.more-activities__wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.more-activities__wrapper p {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.more-activities__button {
+  color: rgb(2, 122, 151);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.more-activities__button .icon__wrapper {
+  height: 24px;
+
+}
+
+.more-activities__button svg {
+  fill: rgb(2, 122, 151);
+}
+
+.more-activities__text {
+  font-weight: 600;
+}
